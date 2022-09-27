@@ -1,0 +1,81 @@
+\documentclass[a4paper, 12pt]{report}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{amssymb,amsfonts,amsmath,mathtext,cite,enumerate,float}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{geometry}
+
+\makeatletter
+\renewcommand{\@biblabel}[1]{#1.}
+\makeatother
+
+\geometry{left=3cm}
+\geometry{right=1cm}
+\geometry{top=1cm}
+\geometry{bottom=1cm}
+
+\renewcommand{\theenumi}{\arabic{enumi}}
+\renewcommand{\labelenumi}{\arabic{enumi}}
+\renewcommand{\theenumii}{.\arabic{enumii}}
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}.}
+\renewcommand{\theenumiii}{.\arabic{enumiii}}
+\renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.}
+
+\graphicspath{{images/}}
+
+\begin{document}
+	\thispagestyle{empty}
+	
+	\noindent
+	\begin{minipage}{0.15\linewidth}
+		\includegraphics[width=\linewidth]{b_logo}
+	\end{minipage}
+	\begin{minipage}{0.85\linewidth}\centering
+		\footnotesize
+		\bf{Министерство науки и высшего образования Российской Федерации}\\
+		\bf{Федеральное государственное бюджетное образовательное учреждение высшего образования}\\
+		\bf{«Московский государственный технический университет имени Н.Э.~Баумана}\\
+		\bf{(национальный исследовательский университет)»}\\
+		\bf{(МГТУ им. Н.Э.~Баумана)}
+	\end{minipage}
+	\newline
+	\newline
+	\noindent\rule{\textwidth}{3pt}
+	
+	\noindent
+	\small ФАКУЛЬТЕТ {\bf <<ИНФОРМАТИКА И СИСТЕМЫ УПРАВЛЕНИЯ>>}\\
+	
+	\noindent
+	\small КАФЕДРА {\bf<<ПРОГРАММНОЕ ОБЕСПЕЧЕНЕ ЭВМ И ИНФОРМАЦИОННЫЕ ТЕХНОЛОГИИ>>}\\
+	
+	\noindent
+	\small НАПРАВЛЕНИЕ ПОДГОТОВКИ {\bf 09.03.04 <<ПРОГРАММНАЯ ИНЖЕНЕРИЯ>>}\\
+	
+	\vspace{3cm}
+	
+	\noindent
+	\begin{minipage}{\linewidth}
+		\centering\large\bf{ОТЧЕТ}
+		
+		\centering\bf{по лабораторной работе №1}
+	\end{minipage}
+
+	\begin{center}		
+		\vfill
+		
+		Москва, \the\year
+	\end{center}
+	
+	\pagebreak
+	
+	\tableofcontents
+	
+	\pagebreak
+	
+	Какой-то текст.
+	
+	хехе
+\end{document}
