@@ -1,0 +1,7 @@
+#ifndef MYERRORS_H
+#define MYERRORS_H
+
+#define MEMORY_ALLOCATION_ERROR 100
+#define INPUT_ERROR 101
+
+#endif
