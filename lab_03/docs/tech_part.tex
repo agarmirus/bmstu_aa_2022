@@ -12,13 +12,14 @@
 
 \section{Средства реализации}
 
-Для написания программы был выбран язык C. Данный выбор обуславливается высокой скоростью выполнения кода и наличием богатой стандартной библиотеки.
+Для написания программы был выбран язык C. Данный выбор обуславливается высокой скоростью выполнения кода и наличием многофункциональной стандартной библиотеки.
 
 \section{Реализация алгоритмов}
 
-На листингах 3.1 - 3.3 представлены реализации алгоритмов сортировки.
+На листингах 3.1 -- 3.3 представлены реализации алгоритмов сортировки.
 
-\begin{lstlisting}[label=pancake,caption=Функция блинной сортировки, language=Caml]
+\begin{figure}[H]
+	\begin{lstlisting}[label=pancake,caption=Функция блинной сортировки, language=Caml]
 void pancake_sort(int *arr, const size_t len)
 {
 	for (size_t right = len - 1; right > 0; --right)
@@ -44,8 +45,10 @@ void pancake_sort(int *arr, const size_t len)
 		}
 	}
 }
-\end{lstlisting}
-\begin{lstlisting}[label=cocktail,caption=Функция сортировки перемешиванием, language=Caml]
+	\end{lstlisting}
+\end{figure}
+\begin{figure}[H]
+	\begin{lstlisting}[label=cocktail,caption=Функция сортировки перемешиванием, language=Caml]
 void cocktail_sort(int *arr, const size_t len)
 {
 	size_t left = 0, right = len - 1;
@@ -73,8 +76,10 @@ void cocktail_sort(int *arr, const size_t len)
 		++left;
 	}
 }
-\end{lstlisting}
-\begin{lstlisting}[label=selection,caption=Функция сортировки выбором, language=Caml]
+	\end{lstlisting}
+\end{figure}
+\begin{figure}[H]
+	\begin{lstlisting}[label=selection,caption=Функция сортировки выбором, language=Caml]
 void selection_sort(int *arr, const size_t len)
 {
 	for (size_t i = 0; i < len - 1; ++i)
@@ -91,14 +96,16 @@ void selection_sort(int *arr, const size_t len)
 		}
 	}
 }
-\end{lstlisting}
+	\end{lstlisting}
+\end{figure}
 
 \section{Тестовые данные}
 
 В таблице \ref{tests} приведены тестовые данные для функций сортировки. Все тесты пройдены успешно.
 
-\begin{table}[h]
+\begin{table}[H]
 	\begin{center}
+		\captionsetup{justification=raggedright,singlelinecheck=off}
 		\caption{\label{tests}Тестовые данные для функций сортировки}
 		\begin{tabular}{|c|c|c|}
 			\hline

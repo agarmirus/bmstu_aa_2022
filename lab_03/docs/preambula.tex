@@ -15,12 +15,19 @@
 \makeatother
 
 \usepackage{titlesec}
+\titlespacing{\chapter}{0pt}{-\baselineskip}{\baselineskip}
+\titleformat{\section}{\bfseries}{\thesection}{0.5 em}{}
+\titlespacing*{\section}{0 pt}{\baselineskip}{\baselineskip}
+\titlespacing*{\subsection}{0 pt}{\baselineskip}{\baselineskip}
 
 \usepackage{geometry}
-\geometry{left=3cm}
+\geometry{left=2cm}
 \geometry{right=1cm}
 \geometry{top=2cm}
 \geometry{bottom=2cm}
+
+\usepackage{setspace}
+\onehalfspacing
 
 \renewcommand{\theenumi}{\arabic{enumi}}
 \renewcommand{\labelenumi}{\arabic{enumi}}
@@ -31,9 +38,15 @@
 
 \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}} % for chapters
 
+\renewcommand\bibname{Список использованных источников}
+
+\captionsetup[table]{justification=raggedright} \captionsetup[figure]{justification=centering,labelsep=endash}
+\DeclareCaptionLabelSeparator{dash}{~---~}
+\captionsetup{labelsep=dash}
+
 \usepackage{indentfirst}
 
-\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter.}{1ex}{\Huge\bfseries}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter}{1ex}{\Huge\bfseries}
 
 \graphicspath{{images/}}%путь к рисункам
 
